@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/BWlogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bookwormlogo"
+            android:contentDescription="@string/app_logo" />
+
+        <TextView
+            android:id="@+id/browse_books_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/books_list"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="50dp" />
+
+        <Button
+            android:id="@+id/back_to_mylist"
+            style="@style/button"
+            android:background="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_books"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/book_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
+    <!--Connects to Browse books activity .java-->
+    <!--contains the list view with all available books -->
+    <!--and a linear layout that contains image view,text view and a button -->
+    <!--Students Name: Omer Gamliel | ID: 209052786 -->
+    <!--Students Name: Batel Gofleyzer | ID: 211869409 -->

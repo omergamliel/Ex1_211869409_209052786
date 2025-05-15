@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ex2_2025</string>
+    <string name="app_logo">לוגו הספריה</string>
+    <string name="books_list">רשימת הספרים</string>
+    <string name="my_books">הספרים שלי</string>
+    <string name="welcome">Welcome to Bookworm Library!</string>
+    <string name="browse_button">עיון בספרים</string>
+    <string name="mylist_button">הרשימה שלי</string>
+    <string name="bookslist_button">רשימת הספרים</string>
+    <string name="logo_textview">לוגו</string>
+    <string name="mylist_textview">הרשימה שלי</string>
+    <string name="bookname">שם הספר:</string>
+    <string name="bookauthor">מחבר הספר:</string>
+    <string name="bookcover">תמונה של הספר</string>
+    <string name="booklink">קישור לאתר:</string>
+    <string name="addtolist_button">הוספה לרשימה שלי</string>
+    <string name="returndate">תאריך החזרה</string>
+    <string name="reminderButton">הגדר תזכורת</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bookname"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bookauthor"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"/>
+
+        <ImageView
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/cover"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/bookcover"
+            android:src="@drawable/book1"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/url"
+            android:text="@string/booklink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/author"/>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addtolist_button"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/returnDate"/>
+
+        <EditText
+            android:id="@+id/returnDate"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:hint="@string/returndate"
+            android:clickable="true"
+            android:inputType="none"
+            android:cursorVisible="false"
+            android:focusable="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/url"
+            />
+        <Button
+            android:id="@+id/reminderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reminderButton"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addButton"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+    <!--Card view that contains Text view,image view, button and edit text -->
+    <!--the card view is in constraint layout -->
+    <!--graphical view of one book -->
+    <!--Students Name: Omer Gamliel | ID: 209052786 -->
+    <!--Students Name: Batel Gofleyzer | ID: 211869409 -->

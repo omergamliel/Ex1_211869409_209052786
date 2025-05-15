@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:theme="@style/Theme.Ex2_2025"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyList_Activity"
+    android:layoutDirection="rtl"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/screen_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/BWlogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/bookwormlogo"
+            android:contentDescription="@string/logo_textview" />
+
+        <TextView
+            android:id="@+id/browse_books_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mylist_textview"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="50dp"/>
+
+        <Button
+            android:id="@+id/back_to_browse_books"
+            style="@style/button"
+            android:backgroundTint="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bookslist_button"
+            android:layout_gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/takenbook_list_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/screen_header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Connects to mylist activity .java -->
+    <!--Contains a linear layout with image view,text view and a button -->
+    <!--contains a list view with all of the user's books -->
+    <!--Students Name: Omer Gamliel | ID: 209052786 -->
+    <!--Students Name: Batel Gofleyzer | ID: 211869409 -->
